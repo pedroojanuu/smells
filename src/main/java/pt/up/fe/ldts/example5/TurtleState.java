@@ -6,6 +6,7 @@ public abstract class TurtleState {
         this.turtle = turtle;
     }
     public abstract void moveForward();
-    public abstract void rotateRight();
     public abstract void rotateLeft();
+    public abstract void rotateRight();
+    public abstract char getName();
 }

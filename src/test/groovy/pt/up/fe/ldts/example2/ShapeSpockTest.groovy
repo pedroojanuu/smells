@@ -18,7 +18,7 @@ class ShapeSpockTest extends Specification {
 
     def 'Get Area Rectangle'() {
         given:
-            def rectangle = new Circle(5.0, 5.0, 10.0, 20.0)
+            def rectangle = new Circle(5, 5, 10, 20)
 
         when:
             def result = rectangle.getArea()
@@ -40,7 +40,7 @@ class ShapeSpockTest extends Specification {
 
     def 'Get Perimeter Rectangle'() {
         given:
-            def rectangle = new Circle(5.0, 5.0, 10.0, 20.0)
+            def rectangle = new Circle(5, 5, 10, 20)
 
         when:
             def result = rectangle.getPerimeter()
@@ -64,7 +64,7 @@ class ShapeSpockTest extends Specification {
     def 'Draw Rectangle'() {
         given:
         def graphics = Mock(GraphicFramework.class)
-        def rectangle = new Circle(5.0, 5.0, 10.0, 20.0);
+        def rectangle = new Circle(5, 5, 10, 20);
 
         when:
         rectangle.draw(graphics)

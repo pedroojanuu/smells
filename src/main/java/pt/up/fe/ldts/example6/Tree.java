@@ -24,6 +24,15 @@ public class Tree {
         return "Tree planted at " + this.plantedAt.toString() + location.toString();
     }
 
+    public String locationLatitude() {
+        return location.getLatitude();
+    }
+    public String locationLongitude() {
+        return location.getLongitude();
+    }
+    public String locationName() {
+        return location.getName();
+    }
     void addAppraisal(Date appraisalDate) {
         this.appraisalDates.add(appraisalDate);
     }

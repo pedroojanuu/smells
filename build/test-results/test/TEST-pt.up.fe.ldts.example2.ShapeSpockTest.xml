@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="pt.up.fe.ldts.example2.ShapeSpockTest" tests="6" skipped="0" failures="3" errors="0" timestamp="2022-11-23T15:01:17" hostname="LAPTOP-3OH32AUK" time="1.091">
+<testsuite name="pt.up.fe.ldts.example2.ShapeSpockTest" tests="6" skipped="0" failures="3" errors="0" timestamp="2022-11-23T19:46:13" hostname="LAPTOP-3OH32AUK" time="0.939">
   <properties/>
-  <testcase name="Get Area Circle" classname="pt.up.fe.ldts.example2.ShapeSpockTest" time="0.897"/>
-  <testcase name="Get Area Rectangle" classname="pt.up.fe.ldts.example2.ShapeSpockTest" time="0.019">
-    <failure message="groovy.lang.GroovyRuntimeException: Could not find matching constructor for: pt.up.fe.ldts.example2.Circle(BigDecimal, BigDecimal, BigDecimal, BigDecimal)" type="groovy.lang.GroovyRuntimeException">groovy.lang.GroovyRuntimeException: Could not find matching constructor for: pt.up.fe.ldts.example2.Circle(BigDecimal, BigDecimal, BigDecimal, BigDecimal)
+  <testcase name="Get Area Circle" classname="pt.up.fe.ldts.example2.ShapeSpockTest" time="0.815"/>
+  <testcase name="Get Area Rectangle" classname="pt.up.fe.ldts.example2.ShapeSpockTest" time="0.009">
+    <failure message="groovy.lang.GroovyRuntimeException: Could not find matching constructor for: pt.up.fe.ldts.example2.Circle(Double, Double, Double, Double)" type="groovy.lang.GroovyRuntimeException">groovy.lang.GroovyRuntimeException: Could not find matching constructor for: pt.up.fe.ldts.example2.Circle(Double, Double, Double, Double)
 	at pt.up.fe.ldts.example2.ShapeSpockTest.Get Area Rectangle(ShapeSpockTest.groovy:21)
 </failure>
   </testcase>
   <testcase name="Get Perimeter Circle" classname="pt.up.fe.ldts.example2.ShapeSpockTest" time="0.003"/>
-  <testcase name="Get Perimeter Rectangle" classname="pt.up.fe.ldts.example2.ShapeSpockTest" time="0.003">
-    <failure message="groovy.lang.GroovyRuntimeException: Could not find matching constructor for: pt.up.fe.ldts.example2.Circle(BigDecimal, BigDecimal, BigDecimal, BigDecimal)" type="groovy.lang.GroovyRuntimeException">groovy.lang.GroovyRuntimeException: Could not find matching constructor for: pt.up.fe.ldts.example2.Circle(BigDecimal, BigDecimal, BigDecimal, BigDecimal)
+  <testcase name="Get Perimeter Rectangle" classname="pt.up.fe.ldts.example2.ShapeSpockTest" time="0.001">
+    <failure message="groovy.lang.GroovyRuntimeException: Could not find matching constructor for: pt.up.fe.ldts.example2.Circle(Double, Double, Double, Double)" type="groovy.lang.GroovyRuntimeException">groovy.lang.GroovyRuntimeException: Could not find matching constructor for: pt.up.fe.ldts.example2.Circle(Double, Double, Double, Double)
 	at pt.up.fe.ldts.example2.ShapeSpockTest.Get Perimeter Rectangle(ShapeSpockTest.groovy:43)
 </failure>
   </testcase>
-  <testcase name="Draw Circle" classname="pt.up.fe.ldts.example2.ShapeSpockTest" time="0.164"/>
+  <testcase name="Draw Circle" classname="pt.up.fe.ldts.example2.ShapeSpockTest" time="0.108"/>
   <testcase name="Draw Rectangle" classname="pt.up.fe.ldts.example2.ShapeSpockTest" time="0.003">
-    <failure message="groovy.lang.GroovyRuntimeException: Could not find matching constructor for: pt.up.fe.ldts.example2.Circle(BigDecimal, BigDecimal, BigDecimal, BigDecimal)" type="groovy.lang.GroovyRuntimeException">groovy.lang.GroovyRuntimeException: Could not find matching constructor for: pt.up.fe.ldts.example2.Circle(BigDecimal, BigDecimal, BigDecimal, BigDecimal)
+    <failure message="groovy.lang.GroovyRuntimeException: Could not find matching constructor for: pt.up.fe.ldts.example2.Circle(Double, Double, Double, Double)" type="groovy.lang.GroovyRuntimeException">groovy.lang.GroovyRuntimeException: Could not find matching constructor for: pt.up.fe.ldts.example2.Circle(Double, Double, Double, Double)
 	at pt.up.fe.ldts.example2.ShapeSpockTest.Draw Rectangle(ShapeSpockTest.groovy:67)
 </failure>
   </testcase>

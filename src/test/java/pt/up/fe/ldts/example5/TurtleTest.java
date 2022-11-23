@@ -8,7 +8,8 @@ public class TurtleTest {
 
     @Test
     public void testRotateLeft() {
-        Turtle turtle = new Turtle(5, 5, 'N');
+        TurtleState turtleState = new TurtleNorth();
+        Turtle turtle = new Turtle(5, 5, turtleState);
         turtle.execute('L'); assertEquals('W', turtle.getDirection());
         turtle.execute('L'); assertEquals('S', turtle.getDirection());
         turtle.execute('L'); assertEquals('E', turtle.getDirection());
@@ -19,7 +20,8 @@ public class TurtleTest {
 
     @Test
     public void testRotateRight() {
-        Turtle turtle = new Turtle(5, 5, 'N');
+        TurtleState turtleState = new TurtleNorth();
+        Turtle turtle = new Turtle(5, 5, turtleState);
         turtle.execute('R'); assertEquals('E', turtle.getDirection());
         turtle.execute('R'); assertEquals('S', turtle.getDirection());
         turtle.execute('R'); assertEquals('W', turtle.getDirection());
@@ -30,29 +32,32 @@ public class TurtleTest {
 
     @Test
     public void testForward() {
-        Turtle turtleN = new Turtle(5, 5, 'N');
+        TurtleState turtleState = new TurtleNorth();
+        Turtle turtleN = new Turtle(5, 5, turtleState);
 
         turtleN.execute('F');
         assertEquals(4, turtleN.getRow());
         assertEquals(5, turtleN.getColumn());
 
-        Turtle turtleW = new Turtle(5, 5, 'W');
+        turtleState = new TurtleWest();
+        Turtle turtleW = new Turtle(5, 5, turtleState);
 
         turtleW.execute('F');
         assertEquals(5, turtleW.getRow());
         assertEquals(4, turtleW.getColumn());
 
-        Turtle turtleS = new Turtle(5, 5, 'S');
+        turtleState = new TurtleSouth();
+        Turtle turtleS = new Turtle(5, 5, turtleState);
 
         turtleS.execute('F');
         assertEquals(6, turtleS.getRow());
         assertEquals(5, turtleS.getColumn());
 
-        Turtle turtleE = new Turtle(5, 5, 'E');
+        turtleState = new TurtleEast();
+        Turtle turtleE = new Turtle(5, 5, turtleState);
 
         turtleE.execute('F');
         assertEquals(5, turtleE.getRow());
         assertEquals(6, turtleE.getColumn());
     }
-
 }

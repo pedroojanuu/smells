@@ -9,6 +9,15 @@ public class Location {
         this.latitude = latitude;
         this.longitude = longitude;
     }
+    public String getLatitude() {
+        return latitude;
+    }
+    public String getLongitude() {
+        return longitude;
+    }
+    public String getName() {
+        return name;
+    }
     public String toString() {
         return this.latitude + "," + this.longitude + " (" + this.name + ")";
     }

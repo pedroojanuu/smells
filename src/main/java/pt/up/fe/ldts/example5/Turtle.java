@@ -18,8 +18,8 @@ public class Turtle {
     public int getColumn() {
         return column;
     }
-    public TurtleState getDirection() {
-        return direction;
+    public String getDirection() {
+        return direction.getName();
     }
     public void setRow(int row) {
         this.row = row;
