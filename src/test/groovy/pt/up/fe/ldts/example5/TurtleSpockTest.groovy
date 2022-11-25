@@ -6,8 +6,8 @@ class TurtleSpockTest extends Specification {
 
     def 'Rotate Left'() {
         given:
-            def turtleState = new TurtleNorth();
-            def turtle = new Turtle(5, 5, turtleState);
+            def TurtleDirection = new TurtleNorth();
+            def turtle = new Turtle(5, 5, TurtleDirection);
 
         when:
             turtle.execute('L' as char);
@@ -40,8 +40,8 @@ class TurtleSpockTest extends Specification {
 
     def 'Rotate Right'() {
         given:
-            def turtleState = new TurtleNorth();
-            def turtle = new Turtle(5, 5, turtleState);
+            def TurtleDirection = new TurtleNorth();
+            def turtle = new Turtle(5, 5, TurtleDirection);
 
         when:
             turtle.execute('R' as char);
@@ -74,8 +74,8 @@ class TurtleSpockTest extends Specification {
 
     def 'Forward'() {
         given:
-            def turtleState = new TurtleNorth();
-            def turtle = new Turtle(5, 5, turtleState);
+            def TurtleDirection = new TurtleNorth();
+            def turtle = new Turtle(5, 5, TurtleDirection);
             def turtleW = new Turtle(5, 5, new TurtleWest());
             def turtleS = new Turtle(5, 5, new TurtleSouth());
             def turtleE = new Turtle(5, 5, new TurtleEast());

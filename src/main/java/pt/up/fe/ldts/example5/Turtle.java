@@ -1,12 +1,12 @@
 package pt.up.fe.ldts.example5;
 
-import pt.up.fe.ldts.example5.TurtleState;
+import pt.up.fe.ldts.example5.TurtleDirection;
 
 public class Turtle {
     private int row;
     private int column;
-    protected TurtleState direction;
-    public Turtle(int row, int column, TurtleState direction) {
+    protected TurtleDirection direction;
+    public Turtle(int row, int column, TurtleDirection direction) {
         this.row = row;
         this.column = column;
         this.direction = direction;
@@ -18,7 +18,7 @@ public class Turtle {
     public int getColumn() {
         return column;
     }
-    public String getDirection() {
+    public char getDirection() {
         return direction.getName();
     }
     public void setRow(int row) {
@@ -27,7 +27,7 @@ public class Turtle {
     public void setColumn(int column) {
         this.column = column;
     }
-    public void setDirection(TurtleState direction) {
+    public void setDirection(TurtleDirection direction) {
         this.direction = direction;
     }
     public void execute(char command) {

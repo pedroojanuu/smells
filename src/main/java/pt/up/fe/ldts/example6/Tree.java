@@ -21,7 +21,7 @@ public class Tree {
     }
 
     public String toString() {
-        return "Tree planted at " + this.plantedAt.toString() + location.toString();
+        return "Tree planted at " + this.plantedAt.toString() + " in location " + location.toString();
     }
 
     public String locationLatitude() {

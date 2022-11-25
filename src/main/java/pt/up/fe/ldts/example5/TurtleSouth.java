@@ -1,6 +1,6 @@
 package pt.up.fe.ldts.example5;
 
-public class TurtleSouth extends TurtleState {
+public class TurtleSouth extends TurtleDirection {
     public char getName() {
         return 'S';
     }

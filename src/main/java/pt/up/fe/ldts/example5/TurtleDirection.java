@@ -1,6 +1,6 @@
 package pt.up.fe.ldts.example5;
 
-public abstract class TurtleState {
+public abstract class TurtleDirection {
     protected Turtle turtle;
     public void setTurtle(Turtle turtle) {
         this.turtle = turtle;
